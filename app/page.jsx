@@ -3,11 +3,11 @@
 // for more info "https://github.com/vercel/next.js/issues/43077"
 
 //export const dynamic = "force-dynamic"; // this is the fix
-
+"use client"
 import Results from "@/components/Results";
 
-export default async function Home({ searchParams }) {
-  const likes = searchParams.likes || "fetchTrending";
+export default async function Home() {
+  //const likes = searchParams.likes || "fetchTrending";
 
   const res = await fetch(
     `https://victorious-teal-school-uniform.cyclic.app/api`,
