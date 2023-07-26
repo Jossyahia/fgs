@@ -2,8 +2,8 @@
 
 // for more info "https://github.com/vercel/next.js/issues/43077"
 
-//export const dynamic = "force-dynamic"; // this is the fix
-"use client"
+export const dynamic = "force-dynamic"; // this is the fix
+//"use client"
 import Results from "@/components/Results";
 
 export default async function Home() {
